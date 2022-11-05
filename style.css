@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+#frontPage{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/fpBack.jpg);
+    background-size: cover;
+    color: white;
+    background-attachment: fixed;
+}
+
+#frontPage>p{
+    font-size: 1.5em;
+    transition: background 1s;
+}
+
+.award{
+    background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+}
+
+#name{
+    font-family: 'Cinzel', serif;
+    font-size: 5em;
+    transition: letter-spacing 0.5s;
+}
+
+#name:hover{
+    letter-spacing: 0.5em;
+    background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: default;
+}
+
+#bottomDiv{
+    background: linear-gradient(#74ebd5, #acb6e5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3em;
+}
+
+#intro{
+    width: 50%;
+    font-size: 1.5em;
+    margin-bottom: 2em;
+}
+
+#intro>p::before{
+    content: '“';
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2em;
+}
+
+#timelineDiv{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5em;
+}
+
+#timelineDiv>h2{
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+#tLineList{
+    font-size: 1.25em;
+    width: 50%;
+    list-style-position: inside;
+}
+
+#quote{
+    display: block;
+    width: 50%;
+    margin-bottom: 5em;
+}
+
+blockquote{
+    font-size: 1.75em;
+    border-left: 7px solid rgb(172, 148, 13);
+    padding-left: 20px;
+}
+
+#quote>figcaption{
+    text-align: right;
+    font-size: 1.5em;
+    color: grey;
+}
+
+#wik{
+    font-size: 1.5em;
+    margin-bottom: 5em;
+}
+
+a, a:visited{
+    color: black;
+}
